@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gruping Tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: aquamarine;
+        }
+
+        header{
+            background-color: blueviolet;
+            padding: 10px;
+        }
+
+        main{
+            background-color: blue;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        article > aside{
+            background-color: cornflowerblue;
+
+        }
+
+        footer{
+            background-color: brown;
+            color: chartreuse;
+            text-align: center;
+            padding: 1px;
+            margin: 0px;
+        }
+
+        nav{
+            background-color: lawngreen;
+            padding: 3px;
+        }
+           
+nav>a{
+    
+            text-decoration: none;
+            color: rgb(25, 26, 26);
+            font-weight: bold;
+            margin-right: 30px;
+        }
+        nav>a :hover{
+            text-decoration: underline
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>
+           MEU SITE        </h1>
+        <nav>
+          <a href="#">Link</a> 
+
+          <a href="#">Link</a>
+          
+          <a href="#">Link</a>
+          
+          <a href="#">Link</a>
+        </nav>
+
+    </header>
+
+    <main>
+<section id="assuntos"></section>
+
+        <section id="noticias"></section>
+        <article>
+            <h2>Notícias sobre o Brasil</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique expedita architecto corporis impedit necessitatibus, nulla at inventore dolor laudantium culpa. Voluptate rem placeat eaque amet cum. Exercitationem dignissimos dolorum quos?</p>
+            <aside>
+                Escrito por Arthur Gomes
+            </aside>
+        </article>
+    </main>
+
+    <footer>
+
+<P>Desenvolvido pelo curso em vídeo</P>
+    </footer>
+</body>
+</html>
