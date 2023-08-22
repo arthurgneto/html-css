@@ -1,8 +1,28 @@
 @charset "UTF8";
 
+  @import url('https://fonts.googleapis.com/css2?family=Comforter&family=Merriweather:wght@700&family=Passion+One&display=swap');
+
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+
+
+:root{
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', cursive;
+}
+
 *{
     margin: 0px;
     padding: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+}
+
+html,body{
+    min-height: 100vh;
+    background-color: antiquewhite;
+    font-family: var(--fonte1) ;
 }
 
 html,body{
@@ -20,6 +40,8 @@ header{
     {
         padding-top:  50px;
             font-variant: small-caps;
+            font-family: var(--fonte2);
+            font-size: 10vw;
 }
 
 header > p {
@@ -42,7 +64,8 @@ padding-top: 10vh;
 padding-bottom: 10vh;
 line-height: 2em;
 padding-left: 30px;
-
+font-family: cursive;
+font-size: 3.5vw;
 }
 
 section.normal{
@@ -58,8 +81,9 @@ section.imagem{
 }
 
 section.imagem > p {
-    width: 400px ;
+   display: inline-block;
     background-color: black;
+
 } 
 footer{
     background-color: black;
