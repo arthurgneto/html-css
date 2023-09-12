@@ -11,13 +11,14 @@
          table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         
          }
 
          td, th{
             border:  1px solid black;
             padding: 10px;
-            background-color: rgb(119, 116, 116);
+           
          }
          thead{
             background-color: rgb(47, 49, 49);
@@ -29,10 +30,29 @@
 
         }
         caption{
-            border: 1px solid black;
+            
             padding: 10px;
             font-weight: bold;
-            background-color: aquamarine;
+            background-color: rgb(124, 150, 141);
+            font-size: 1.5em;
+        }
+thead, tfoot{
+    background-color: brown;
+    color: bisque;
+}
+
+thead > tr > th {
+    position: sticky;
+    top: -1px;
+    background-color: aqua;
+}
+
+        tbody > tr:nth-child(2n) {
+            background-color: blueviolet;
+            
+        }
+        td.num{
+            text-align: right;
         }
 
     </style>
@@ -77,6 +97,7 @@
       </tr>
 
     </tbody>
+
     <tfoot>
         <tr>
             <th scope="rowgroup">Total de Habitantes</th>
@@ -86,5 +107,8 @@
     </tfoot>
 </table>
 
-</body>
-</html>
+<table>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat quam unde tempore sint accusantium eius saepe, ex alias suscipit laudantium veritatis, corporis dolore fuga ullam neque voluptatum voluptates quae id.</p>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat quam unde tempore sint accusantium eius saepe, ex alias suscipit laudantium veritatis, corporis dolore fuga ullam neque voluptatum voluptates quae id.</p><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat quam unde tempore sint accusantium eius saepe, ex alias suscipit laudantium veritatis, corporis dolore fuga ullam neque voluptatum voluptates quae id.</p><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat quam unde tempore sint accusantium eius saepe, ex alias suscipit laudantium veritatis, corporis dolore fuga ullam neque voluptatum voluptates quae id.</p><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat quam unde tempore sint accusantium eius saepe, ex alias suscipit laudantium veritatis, corporis dolore fuga ullam neque voluptatum voluptates quae id.</p>
+</table>
